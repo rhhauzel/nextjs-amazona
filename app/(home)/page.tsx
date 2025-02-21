@@ -11,6 +11,7 @@ import HomeCard from '@/components/shared/home/home-card'
 import { toSlug } from '@/lib/utils'
 import { Card, CardContent } from '@/components/ui/card'
 import ProductSlider from '@/components/shared/product/product-slider'
+import BrowsingHistoryList from '@/components/shared/browsing-hhistory-list'
 //import { getTranslations } from 'next-intl/server'
 
 const Page = async () => {
@@ -86,6 +87,10 @@ const Page = async () => {
             <ProductSlider title='Best Selling Products' products={bestSellingProducts} />
           </CardContent>
         </Card>
+      </div>
+
+      <div className='p-4 bg-background'>
+        <BrowsingHistoryList />
       </div>
     </>
   )
